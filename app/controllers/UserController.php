@@ -6,8 +6,7 @@
  * Time: 10:36 PM
  */
 
-namespace App\controllers;
-
+//namespace App\controllers;
 
 use App\libraries\Controller;
 

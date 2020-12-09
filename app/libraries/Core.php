@@ -8,7 +8,7 @@
 
 namespace App\libraries;
 
-
+use App\controllers\UserController;
 class Core
 {
 
@@ -27,12 +27,11 @@ class Core
 
         if(file_exists('../app/controllers/'.ucwords($url[0])."Controller.php"))
         {
-            $this->Controller=ucwords($url[0]);
+            $this->Controller=ucwords($url[0])."Controller";
             unset($url[0]);
         }
-
         //require the controller
-        require_once '../app/controllers/'.$this->Controller."Controller.php";
+        require_once '../app/controllers/'.$this->Controller.".php";
         //instantiate controller
         $this->Controller=new $this->Controller;
     }
