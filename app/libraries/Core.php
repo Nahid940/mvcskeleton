@@ -26,7 +26,7 @@ class Core
 
         //look in controllers fro controller
 
-        if(file_exists('../app/controllers/'.ucwords($url[0]).".php"))
+        if(file_exists('../app/controllers/'.ucwords($url[0])."Controller.php"))
         {
             $this->Controller=ucwords($url[0]);
             unset($url[0]);
