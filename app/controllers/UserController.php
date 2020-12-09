@@ -16,7 +16,7 @@ class UserController extends Controller
 
     public function __construct()
     {
-
+        echo "user";
     }
 
     public function index()

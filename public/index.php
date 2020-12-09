@@ -6,3 +6,5 @@
  * Time: 10:17 PM
  */
 require_once '../app/bootstrap.php';
+
+$init=new \App\libraries\Core();
