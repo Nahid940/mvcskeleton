@@ -23,4 +23,9 @@ class UserController extends Controller
         return $this->view("hello");
     }
 
+    public function getUser($id)
+    {
+        echo "Hi User".$id;
+    }
+
 }

@@ -16,7 +16,7 @@ class Core
     //format urls controller/method/param
 
     protected $Controller="Default";
-    protected $defaultMethod="index";
+    protected $Method="index";
     protected $params=[];
 
 
@@ -34,6 +34,19 @@ class Core
         require_once '../app/controllers/'.$this->Controller.".php";
         //instantiate controller
         $this->Controller=new $this->Controller;
+
+        if(isset($url[1]))
+        {
+            if(method_exists($this->Controller,$url[1]))
+            {
+                $this->Method=$url[1];
+            }
+            unset($url[1]);
+        }
+
+        $this->params=$url?array_values($url):[];
+
+        call_user_func_array([$this->Controller,$this->Method],$this->params);
     }
 
     public function getUrl()
