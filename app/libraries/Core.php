@@ -23,9 +23,6 @@ class Core
     public function __construct()
     {
         $url=$this->getUrl();
-
-        var_dump($url);die;
-
         //look in controllers fro controller
 
         if(file_exists('../app/controllers/'.ucwords($url[0])."Controller.php"))
