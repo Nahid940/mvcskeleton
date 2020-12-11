@@ -15,7 +15,7 @@ class Core
     //generate url and load controllers
     //format urls controller/method/param
 
-    protected $Controller="Default";
+    protected $Controller="HomeController";
     protected $Method="index";
     protected $params=[];
 
