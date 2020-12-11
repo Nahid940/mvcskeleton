@@ -12,7 +12,8 @@ class HomeController extends \App\libraries\Controller
 
     public function index()
     {
-        $this->view('index');
+        $data=['name'=>"nahid"];
+        $this->view('index',$data);
     }
 
 

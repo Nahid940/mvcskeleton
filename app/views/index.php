@@ -1,2 +1,2 @@
 <?php
-echo "HomePage";
+var_dump($data['name']);
