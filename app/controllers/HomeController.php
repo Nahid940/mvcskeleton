@@ -9,10 +9,16 @@
 class HomeController extends \App\libraries\Controller
 {
 
+    protected $userModel;
+
+    public function __construct()
+    {
+        $this->userModel=$this->model('User');
+    }
 
     public function index()
     {
-        $data=['name'=>"nahid"];
+        $data=$this->userModel->getUsers();
         $this->view('index',$data);
     }
 

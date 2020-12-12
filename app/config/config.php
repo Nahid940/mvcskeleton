@@ -8,8 +8,8 @@
 
 define('DB_HOST','localhost');
 define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','');
+define('DB_PASS','Nahid940###***');
+define('DB_NAME','salt');
 
 //App root
 define('APP_ROOT',dirname(dirname(__FILE__)));
