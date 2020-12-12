@@ -6,6 +6,11 @@
  * Time: 9:43 PM
  */
 
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASS','');
+define('DB_NAME','');
+
 //App root
 define('APP_ROOT',dirname(dirname(__FILE__)));
 
